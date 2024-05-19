@@ -1,0 +1,122 @@
+.team-body {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 75px;
+  object-fit: cover;
+}
+
+.profile-content {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.team-title h1 {
+  font-family: Gill Sans MT;
+  margin-top: 85px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: -3px;
+  color: white;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  position: relative;
+  margin: 20px;
+  font-family: Gill Sans MT;
+  background-color: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #000000;
+  transition: 0.3s;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h4 {
+  font-family: Gill Sans MT;
+  color: #2c2c32;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.ins {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.team-member p {
+  font-family: Gill Sans MT;
+  color: #666;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.team-wording {
+  display: flex;
+  position: relative;
+  font-family: Gill Sans MT;
+  color: #01010f;
+  width: 85%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff80;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-wording:hover {
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+
+.team-wording-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .team-wording {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-wording-img {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+}

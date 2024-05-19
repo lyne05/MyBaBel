@@ -1,0 +1,165 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.place-title h1 {
+  font-family: Gill Sans MT;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 85px;
+  margin-bottom: -3px;
+}
+
+.places-babel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.historical {
+  display: flex;
+}
+
+.nature {
+  display: flex;
+}
+
+.beachesIslands::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.beachesIslands {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff80;
+  width: 78%;
+  max-height: 250px;
+}
+
+.beachesIslands .place-info {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.beachesIslands .place-info p {
+  white-space: nowrap;
+  display: none;
+  margin: 0;
+}
+
+.beachesIslands .place-info:hover p {
+  white-space: normal;
+  overflow: visible;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffffcc;
+}
+
+.other-places {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.place-info {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 20px;
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  width: 300px;
+}
+
+.place-info:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.place-info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.place-info h1 {
+  font-family: Gill Sans MT;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
+
+.place-info p {
+  white-space: normal;
+  font-family: Gill Sans MT;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #01010f;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+  .place-content {
+    font-family: Gill Sans MT;
+  }
+  .beachesIslands {
+    width: 90%;
+  }
+
+  .place-info {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .places-babel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beachesIslands {
+    width: 100%;
+    padding: 20px;
+    max-height: unset;
+  }
+
+  .place-info {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
