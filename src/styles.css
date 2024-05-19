@@ -10,7 +10,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 5px;
   left: 0;
   right: 0;
@@ -29,7 +29,7 @@ body {
   color: white;
   font-family: Gill Sans MT;
   margin-left: 10px;
-  margin-right: auto; 
+  margin-right: auto;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -58,7 +58,7 @@ nav ul li:hover {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  margin-right: 15px; /
+  margin-right: 15px;
 }
 
 .menu-toggle .line {
@@ -78,7 +78,7 @@ nav ul li:hover {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0; 
+    right: 0;
     background-color: #333;
     width: 100%;
     padding: 20px;
@@ -107,7 +107,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin-left: auto;
-  margin-right: 15px; 
+  margin-right: 15px;
   border: 2px solid white;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -167,7 +167,7 @@ nav ul li.active:hover {
   align-items: center;
   width: 100%;
   padding: 10px 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .footer p {
@@ -197,7 +197,9 @@ nav ul li.active:hover {
     position: static;
   }
 
-  .footer p, .footer h1, .footer img {
+  .footer p,
+  .footer h1,
+  .footer img {
     margin: 5px 0;
   }
 
