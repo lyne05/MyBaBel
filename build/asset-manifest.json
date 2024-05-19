@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b621a64b.css",
+    "main.js": "/static/js/main.bd325ed7.js",
+    "static/media/culturebg.jpg": "/static/media/culturebg.2c8d99639840c4593f38.jpg",
+    "static/media/background.jpg": "/static/media/background.548c85d7fad3143c6fe7.jpg",
+    "static/media/homepage.jpg": "/static/media/homepage.603fae111374cb6c1964.jpg",
+    "static/media/babelbhay.png": "/static/media/babelbhay.4d20eb0f292994aba5ad.png",
+    "static/media/baripat baregong.png": "/static/media/baripat baregong.c2fc9276e6292bd3b160.png",
+    "static/media/Davis.jpg": "/static/media/Davis.57ec01e93fab3cc3fbdf.jpg",
+    "static/media/babelmap.png": "/static/media/babelmap.a3dddd7cd20d8818ec64.png",
+    "static/media/Evelyne.jpg": "/static/media/Evelyne.36839bdb2262e50a2973.jpg",
+    "static/media/pulauketawai.jpg": "/static/media/pulauketawai.09963379ad4d7c998baa.jpg",
+    "static/media/lengkuas.jpg": "/static/media/lengkuas.3e4e15e4b9d16551fb06.jpg",
+    "static/media/Instagram_logo.png": "/static/media/Instagram_logo.1ceddc1fd83bd80d1d7f.png",
+    "static/media/danaukaolin.jpeg": "/static/media/danaukaolin.b8ad5c4aef21a7cc152d.jpeg",
+    "static/media/pulauleebong.jpg": "/static/media/pulauleebong.41aaa214c4c3782a19db.jpg",
+    "static/media/buang jung.jpg": "/static/media/buang jung.e09ebb42805947adea57.jpg",
+    "static/media/chengBeng.jpg": "/static/media/chengBeng.e1089f8c1e342de2b305.jpg",
+    "static/media/mercusuarkalian.jpg": "/static/media/mercusuarkalian.09048a571022d7c9d639.jpg",
+    "static/media/tanjungkelayang.jpg": "/static/media/tanjungkelayang.fd2f782cc14ba0e78c10.jpg",
+    "static/media/tanjungpendam.jpg": "/static/media/tanjungpendam.ab6705dec74dbcbee310.jpg",
+    "static/media/Aulia.jpg": "/static/media/Aulia.b518cbbb46e9889627b0.jpg",
+    "static/media/perang ketupat.jpg": "/static/media/perang ketupat.36719c8b2c59dd992fac.jpg",
+    "static/media/laskarpelangi.jpg": "/static/media/laskarpelangi.00f90601776e500de442.jpg",
+    "static/media/peh cun.jpeg": "/static/media/peh cun.385ff5ce3a4b3226dd1b.jpeg",
+    "static/media/wismaranggam.jpg": "/static/media/wismaranggam.b9364640ca6ab68e74f2.jpg",
+    "static/media/batuberlayar.jpg": "/static/media/batuberlayar.e765b414f84c17e465af.jpg",
+    "static/media/logo.png": "/static/media/logo.c5d7a1ff4cf487c11541.png",
+    "static/media/peramun.jpg": "/static/media/peramun.516f16a10af85e3673eb.jpg",
+    "static/media/humidity.png": "/static/media/humidity.2157923219f5364db275.png",
+    "static/media/cloud.png": "/static/media/cloud.d68e62d3e47029b50ab7.png",
+    "static/media/Airin.jpg": "/static/media/Airin.3ce56bdbf3dca25a8719.jpg",
+    "static/media/temperature.png": "/static/media/temperature.ee9eb52df3117a63aecf.png",
+    "index.html": "/index.html",
+    "main.b621a64b.css.map": "/static/css/main.b621a64b.css.map",
+    "main.bd325ed7.js.map": "/static/js/main.bd325ed7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b621a64b.css",
+    "static/js/main.bd325ed7.js"
+  ]
+}
