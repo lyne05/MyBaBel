@@ -26,6 +26,8 @@
 }
 
 .budaya-info {
+  position: relative;
+  flex: 0 0 auto;
   margin: 20px;
   background-color: #ffffffcc;
   padding: 20px;
