@@ -47,12 +47,14 @@
 }
 
 .budaya-info h1 {
-  font-family: "Gill Sans MT";
+  font-family: Gill Sans MT;
+  transform: translateY(-50%);
   text-align: center;
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 6px;
 }
 
 .budaya-info p {
