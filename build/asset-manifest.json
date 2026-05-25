@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.26d449fb.css",
-    "main.js": "/static/js/main.2dedd20c.js",
+    "main.css": "/static/css/main.9402e3fd.css",
+    "main.js": "/static/js/main.f6f13b94.js",
     "static/media/culturebg.jpg": "/static/media/culturebg.2c8d99639840c4593f38.jpg",
     "static/media/background.jpg": "/static/media/background.548c85d7fad3143c6fe7.jpg",
     "static/media/homepage.jpg": "/static/media/homepage.603fae111374cb6c1964.jpg",
-    "static/media/babelbhay.png": "/static/media/babelbhay.4d20eb0f292994aba5ad.png",
+    "static/media/menumbing.png": "/static/media/menumbing.69379a05ce09cd32bdce.png",
     "static/media/baripat baregong.png": "/static/media/baripat baregong.c2fc9276e6292bd3b160.png",
     "static/media/Davis.jpg": "/static/media/Davis.57ec01e93fab3cc3fbdf.jpg",
     "static/media/babelmap.png": "/static/media/babelmap.a3dddd7cd20d8818ec64.png",
@@ -33,11 +33,11 @@
     "static/media/Airin.jpg": "/static/media/Airin.3ce56bdbf3dca25a8719.jpg",
     "static/media/temperature.png": "/static/media/temperature.ee9eb52df3117a63aecf.png",
     "index.html": "/index.html",
-    "main.26d449fb.css.map": "/static/css/main.26d449fb.css.map",
-    "main.2dedd20c.js.map": "/static/js/main.2dedd20c.js.map"
+    "main.9402e3fd.css.map": "/static/css/main.9402e3fd.css.map",
+    "main.f6f13b94.js.map": "/static/js/main.f6f13b94.js.map"
   },
   "entrypoints": [
-    "static/css/main.26d449fb.css",
-    "static/js/main.2dedd20c.js"
+    "static/css/main.9402e3fd.css",
+    "static/js/main.f6f13b94.js"
   ]
 }
