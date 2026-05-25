@@ -216,6 +216,10 @@
   margin: 10px 0;
 }
 
+.home-news p {
+  margin-left: 10px;
+}
+
 @media (max-width: 1400px) {
   .news-grid {
     grid-template-columns: repeat(4, 1fr);
