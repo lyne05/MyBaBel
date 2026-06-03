@@ -55,7 +55,8 @@ const Place = ({ animatePlace }) => {
               <h1>Pulau Batu Berlayar</h1>
               <img src={batuberlayar} alt="Pulau Batu Berlayar" />
               <p>
-                Pulau Batu Berlayar terkenal dengan batu granit raksasa yang
+                Pulau Batu Berlayar merupakan destinasi wisata di
+                Belitung yang terkenal dengan batu granit raksasa yang
                 menyerupai layar kapal. Tempat ini menjadi salah satu lokasi
                 favorit wisatawan untuk island hopping maupun snorkeling.
               </p>
@@ -65,10 +66,10 @@ const Place = ({ animatePlace }) => {
               <h1>Pulau Lengkuas</h1>
               <img src={lengkuas} alt="Pulau Lengkuas" />
               <p>
-                Pulau Lengkuas memiliki air laut yang jernih dan dangkal,
-                sehingga cocok untuk snorkeling maupun belajar scuba diving.
-                Pengunjung juga dapat menikmati pemandangan bawah laut yang
-                indah.
+                Pulau Lengkuas merupakan pulau wisata terkenal di Belitung
+                yang memiliki air laut yang jernih dan dangkal, sehingga
+                cocok untuk snorkeling maupun belajar scuba diving. Pengunjung
+                juga dapat menikmati pemandangan bawah laut yang indah.
               </p>
             </div>
 
@@ -76,9 +77,10 @@ const Place = ({ animatePlace }) => {
               <h1>Pantai Tanjung Pendam</h1>
               <img src={tanjungpendam} alt="Pantai Tanjung Pendam" />
               <p>
-                Pantai Tanjung Pendam terkenal sebagai tempat terbaik untuk
-                menikmati sunset. Wisatawan dapat bersantai di tepi pantai
-                sambil menikmati kuliner seafood khas Belitung.
+                Pantai Tanjung Pendam berada di Kota Tanjung Pandan, Belitung.
+                Pantai ini terkenal sebagai tempat terbaik untuk menikmati
+                sunset. Wisatawan dapat bersantai di tepi pantai sambil
+                menikmati kuliner seafood khas Belitung.
               </p>
             </div>
 
@@ -86,8 +88,9 @@ const Place = ({ animatePlace }) => {
               <h1>Pantai Tanjung Kelayang</h1>
               <img src={tanjungkelayang} alt="Pantai Tanjung Kelayang" />
               <p>
-                Pantai Tanjung Kelayang memiliki garis pantai yang panjang dan
-                ombak yang tenang. Tempat ini cocok untuk berenang,
+                Pantai Tanjung Kelayang merupakan salah satu pantai terkenal
+                di Belitung. Pantai ini memiliki garis pantai yang panjang
+                dan ombak yang tenang. Tempat ini cocok untuk berenang,
                 snorkeling, maupun menikmati suasana pantai tropis.
               </p>
             </div>

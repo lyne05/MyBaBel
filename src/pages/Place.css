@@ -48,7 +48,7 @@
   position: relative;
   display: flex;
   overflow-x: auto;
-  gap: 20px;
+  gap: 10px;
   scroll-snap-type: x mandatory;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -131,35 +131,104 @@
   color: #01010f;
 }
 
-/* Media Queries for responsiveness */
-
+/* Responsive design */
 @media (max-width: 768px) {
-  .place-content {
-    font-family: Gill Sans MT;
-  }
-  .beachesIslands {
-    width: 90%;
+  .place-title h1 {
+    font-size: 32px;
+    padding: 0 15px;
   }
 
-  .place-info {
-    width: 90%;
+  .beachesIslands {
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 18px;
+    gap: 8px;
+    max-height: 320px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+  }
+
+  .beachesIslands .place-info {
+    width: 220px;
+    min-width: 220px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  .other-places {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .other-places .place-info {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .place-info img {
+    height: 180px;
+  }
+
+  .place-info h1 {
+    font-size: 20px;
+  }
+
+  .place-info p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 
-@media (max-width: 576px) {
-  .places-babel {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+  .place-content {
+    padding-top: 90px;
+  }
+
+  .place-title h1 {
+    font-size: 29px;
+    padding: 0 12px;
   }
 
   .beachesIslands {
-    width: 100%;
-    padding: 20px;
-    max-height: unset;
+    width: calc(100% - 32px);
+    margin: 16px;
+    padding: 16px;
+    gap: 8px;
+
+    max-height: 300px;
+    overflow-y: hidden;
   }
 
-  .place-info {
+  .beachesIslands .place-info {
+    width: 200px;
+    min-width: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .other-places {
+    padding: 0 18px;
+  }
+
+  .other-places .place-info {
     width: 100%;
-    margin: 20px 0;
+    margin: 18px 0;
+    padding: 18px;
+  }
+
+  .place-info img {
+    height: 160px;
+  }
+
+  .place-info h1 {
+    font-size: 18px;
+  }
+
+  .place-info p {
+    font-size: 13px;
+    line-height: 1.5;
   }
 }

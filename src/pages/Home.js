@@ -3,51 +3,33 @@ import "./Home.css";
 import homepage from "../images/homepage.jpg";
 import babelmap from "../images/babelmap.png";
 
+const NEWS_API_URL =
+  "https://api.rss2json.com/v1/api.json?rss_url=https://www.cnnindonesia.com/nasional/rss";
+
+const cleanDescription = (description) => {
+  return description.replace(/<[^>]*>/g, "").trim();
+};
+
 const Home = ({ handleNavigation }) => {
   const [news, setNews] = useState([]);
-  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        console.log("Fetching news...");
-
-        setLoading(true);
-
-        const API_KEY = process.env.REACT_APP_GNEWS_API_KEY;
-
-        if (!API_KEY) {
-          throw new Error("API key not found");
-        }
-
-        const response = await fetch(
-          `https://gnews.io/api/v4/top-headlines?country=id&lang=id&max=10&apikey=${API_KEY}`
-        );
+        const response = await fetch(NEWS_API_URL);
 
         const data = await response.json();
 
-        console.log("Response:", data);
-
         if (!response.ok) {
-          console.error(data);
-
-          if (response.status === 429) {
-            setNews([]);
-            return;
-          }
-
-          throw new Error("Failed to fetch news");
-        }
-
-        if (data.articles && data.articles.length > 0) {
-          setNews(data.articles);
-        } else {
           setNews([]);
+          return;
         }
+
+        setNews(data.items || []);
       } catch (error) {
         console.error("Error fetching news:", error);
-        setError(error.message);
+        setNews([]);
       } finally {
         setLoading(false);
       }
@@ -88,9 +70,11 @@ const Home = ({ handleNavigation }) => {
 
       <div id="page-info" className="page-info-section">
         <h1 className="info-title">Explore Bangka Belitung</h1>
-
         <div className="page-info">
           <div className="text-home-content">
+            <div className="map-section">
+              <img className="babelmap" src={babelmap} alt="babelmap" />
+            </div>
             <p>
               Provinsi Bangka Belitung merupakan salah satu daerah di Indonesia
               yang terkenal dengan keindahan alam dan kekayaan budayanya.
@@ -98,16 +82,14 @@ const Home = ({ handleNavigation }) => {
               dua pulau utama, yaitu Pulau Bangka dan Pulau Belitung, dengan ibu
               kotanya yaitu Pangkalpinang.
             </p>
-
-            <div className="2nd-p-home">
+            <div className="second-p-home">
               <p>
                 Masing-masing pulaunya memiliki pesona tersendiri, mulai dari
                 hamparan pantai berpasir putih, air laut yang jernih, hingga
                 formasi batu granit yang khas. Keindahan alam tersebut
                 menjadikan Bangka Belitung dikenal sebagai destinasi wisata yang
-                indah dan menenangkan. <br></br>
+                indah dan menenangkan.
               </p>
-
               <p>
                 Selain keindahan alamnya, Bangka Belitung juga dikenal dengan
                 budaya dan tradisi lokal yang beragam. Keramahan masyarakat
@@ -115,18 +97,13 @@ const Home = ({ handleNavigation }) => {
                 memiliki daya tarik tersendiri dan mampu memberikan suasana yang
                 hangat dan menarik untuk dinikmati.
               </p>
+              <button
+                className="continue-btn"
+                onClick={() => handleNavigation("Place", true)}
+              >
+                Continue
+              </button>
             </div>
-          </div>
-
-          <div className="map-section">
-            <img className="babelmap" src={babelmap} alt="babelmap" />
-
-            <button
-              className="continue-btn"
-              onClick={() => handleNavigation("Place", true)}
-            >
-              Continue
-            </button>
           </div>
         </div>
       </div>
@@ -134,36 +111,29 @@ const Home = ({ handleNavigation }) => {
       <div id="home-news" className="home-news">
         <h1>News</h1>
 
-        {error && news.length === 0 && (
-          <p className="news-message">{error}</p>
-        )}
-
         {loading ? (
           <p>Loading news...</p>
         ) : news.length > 0 ? (
           <div className="news-grid">
             {news.map((article, index) => (
               <div key={index} className="news-item">
-                {article.image && (
+                {article.enclosure?.link && (
                   <img
-                    src={article.image}
+                    src={article.enclosure.link}
                     alt={article.title}
                     className="news-image"
                   />
                 )}
-
                 <h2>{article.title}</h2>
-
-                <p>{article.description}</p>
-
-                <a href={article.url} target="_blank" rel="noopener noreferrer">
+                <p>{cleanDescription(article.description)}</p>
+                <a href={article.link} target="_blank" rel="noopener noreferrer">
                   Baca selengkapnya
                 </a>
               </div>
             ))}
           </div>
         ) : (
-          <p>Berita sedang tidak tersedia.</p>
+          <p className="news-empty">Berita sedang tidak tersedia.</p>
         )}
       </div>
     </div>

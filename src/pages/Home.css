@@ -60,7 +60,6 @@
   animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-
 .page-info-section {
   background-color: #205c72;
   padding: 50px 20px;
@@ -71,8 +70,8 @@
   font-family: Gill Sans MT;
   text-align: center;
   font-size: 38px;
-  margin-bottom: 5px;
-  margin-top: 53px
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .page-info {
@@ -84,6 +83,7 @@
   margin-bottom: -40px;
   z-index: 1;
   font-size: larger;
+  position: relative;
 }
 
 .text-home-content {
@@ -108,18 +108,28 @@
   z-index: 1;
 }
 
+.map-section {
+  width: 46%;
+}
+
 .babelmap {
   width: 45%;
   height: auto;
   object-fit: cover;
+  margin-top: 5px;
   margin-right: 15px;
   position: absolute;
   right: 0;
 }
 
+.second-p-home {
+  position: relative;
+}
+
 .continue-btn {
-  margin-top: 330px;
-  margin-left: 70px;
+  position: absolute;
+  right: -155px;
+  top: 155px;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -129,6 +139,7 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  display: inline-block;
 }
 
 @keyframes animate {
@@ -146,23 +157,59 @@
 }
 
 @media (max-width: 768px) {
+  .page-info-section {
+    padding-top: 38px;
+  }
+
+  .info-title {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 32px;
+  }
+
   .page-info {
     flex-direction: column;
     max-width: 100%;
     margin: 0;
-    padding: 10px;
+    margin-bottom: -20px;
+    padding: 8px 10px 20px 10px;
   }
 
   .text-home-content {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-section {
+    width: 100%;
+    order: 1;
   }
 
   .babelmap {
     width: 100%;
     height: auto;
-    margin-right: 0;
-    margin-top: -10px;
+    margin: 0;
     position: static;
+    border-radius: 12px;
+  }
+
+  .text-home-content p:first-child {
+    order: 2;
+    margin-bottom: 18px;
+  }
+
+  .second-p-home {
+    order: 3;
+  }
+
+  .continue-btn {
+    position: static;
+    margin-top: 25px;
+    margin-left: 0;
+    padding: 11px 24px;
+    font-size: 15px;
+    display: block;
   }
 }
 
@@ -191,18 +238,24 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .news-item:hover {
   transform: translateY(-10px);
+
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .news-image {
   width: 100%;
   height: 180px;
+
   border-radius: 8px 8px 0 0;
+
   object-fit: cover;
 }
 
@@ -214,10 +267,6 @@
 .news-item p {
   font-size: 0.95em;
   margin: 10px 0;
-}
-
-.home-news p {
-  margin-left: 10px;
 }
 
 @media (max-width: 1400px) {
